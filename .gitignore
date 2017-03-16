@@ -35,3 +35,5 @@
 # Matlab files
 *.asv
 Results/
+*_L2RLS.mat
+*_OriginalRs.mat
