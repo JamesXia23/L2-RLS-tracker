@@ -24,12 +24,12 @@ case 'football';
 opt = struct('numsample',600, 'condenssig',0.25, 'ff',1, ...
           'batchsize',10, 'affsig',[2,2,.001,.02,.001,.003]); 
 
-case 'boy'
+case 'boy';
 p=[288+17.5,143+21,35,42,0];
 opt = struct('numsample',600, 'condenssig',0.75, 'ff',0.99, ...
  'batchsize',5, 'affsig',[10, 10,.001,.001,.0001,.0001]);
 
-case'face'
+case'face';
 p = [293 283 94	114 0];
 opt = struct('numsample',600, 'condenssig',0.25, 'ff',1, ...
               'batchsize',5, 'affsig',[20,20,.01,0.005,0.0005,0.0005]);  
@@ -44,15 +44,19 @@ p = [ 152, 68, 18, 61, 0.00 ];
 opt = struct('numsample',600, 'condenssig',0.25, 'ff',1, ...
              'batchsize',5, 'affsig',[2,1,.001,.000,.0005,.0005]);   
                  
+% case 'car4'; 
+% p = [245 180 200 150 0];
+% opt = struct('numsample',600, 'condenssig',0.25, 'ff',1, ...
+%              'batchsize',5, 'affsig',[5,5,.025,.01,.002,.001]); 
 case 'car4'; 
-p = [245 180 200 150 0];
+p = [ 124 97 116 100 0];
 opt = struct('numsample',600, 'condenssig',0.25, 'ff',1, ...
-             'batchsize',5, 'affsig',[5,5,.025,.01,.002,.001]); 
+             'batchsize',5, 'affsig',[5,5,.025,.01,.002,.001]);
 
-case 'car11';  
+case 'car11'; 
 p = [89 140 30 25 0];
 opt = struct('numsample',600, 'condenssig',0.25, 'ff',1, ...
-             'batchsize',5, 'affsig',[2,2,.01,.00,.0005,.0005]);      
+             'batchsize',5, 'affsig',[2,2,.01,.00,.0005,.0005]);           
 
 case 'deer';  
 p = [350, 40, 100, 70, 0];
