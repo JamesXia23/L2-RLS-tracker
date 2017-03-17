@@ -11,8 +11,13 @@ end
 
 
 curaxis = drawopt.curaxis;
-axes(curaxis.frm);      
-imagesc(frame, [0,1]); 
+axes(curaxis.frm);
+%判断是不是灰度，如果是就是[0, 255]，如果不是就是[0, 1]
+if  size(frame,3) == 3
+    imagesc(frame, [0, 1]); 
+else
+    imagesc(frame, [0, 255]);
+end
 hold on;     
 
 sz = size(tmpl.mean);  

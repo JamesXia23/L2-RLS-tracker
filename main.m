@@ -21,7 +21,7 @@ fileName_cell{10} = 'occlusion1';
 %%******All the sequences you wish to run******%%
 
 %for vNum=1:10; 
-for vNum=2;
+for vNum=1;
 title=fileName_cell{vNum};
 SetParameters;                     %%set affine parameters
 dataPath = ['.\Data\' title '\'];
@@ -59,10 +59,8 @@ LoopNum = temp(3);%number of frames
 frame = imread([dataPath '1.jpg']);
 if  size(frame,3) == 3
     framegray = double(rgb2gray(frame))/255;
-    123
 else
     framegray = double(frame)/255;
-    456
 end
 %%  p = [px, py, sx, sy, theta];  
 param0 = [p(1), p(2), p(3) /opt.tmplsize(1), p(5), p(4)/p(3), 0];      
